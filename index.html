@@ -1,143 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Job Pulache Carreño</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #050505;
-      --text-main: #f5f5f5;
-      --text-soft: #9ca3af;
-      --accent: #64748b;
-    }
+  <link rel="stylesheet" href="css/styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,500&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: radial-gradient(circle at top, #0b0b0b, #020202 70%);
-      color: var(--text-main);
-      font-family: 'Inter', sans-serif;
-      min-height: 100vh;
-    }
-
-    /* NAV */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.8rem 3rem;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-    }
-
-    nav .logo {
-      font-family: 'Playfair Display', serif;
-      letter-spacing: 0.3em;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-    }
-
-    nav ul li a {
-      color: var(--text-soft);
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: var(--text-main);
-    }
-
-    .cv {
-      border: 1px solid rgba(255,255,255,0.2);
-      padding: 0.6rem 1.2rem;
-    }
-
-    /* HERO */
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      height: calc(100vh - 90px);
-      padding: 2rem;
-    }
-
-    .hero span {
-      font-size: 0.7rem;
-      letter-spacing: 0.35em;
-      color: var(--text-soft);
-      margin-bottom: 1.5rem;
-    }
-
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(3rem, 6vw, 5rem);
-      font-weight: 400;
-      line-height: 1.1;
-    }
-
-    .hero h1 em {
-      font-style: italic;
-      color: var(--accent);
-    }
-
-    .hero p {
-      margin-top: 2rem;
-      max-width: 700px;
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
-      color: var(--text-soft);
-      font-size: 1.1rem;
-    }
-
-    .links {
-      display: flex;
-      gap: 1.5rem;
-      margin-top: 2.5rem;
-    }
-
-    .links a {
-      border: 1px solid rgba(255,255,255,0.15);
-      padding: 0.7rem 1.4rem;
-      font-size: 0.7rem;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--text-main);
-      text-decoration: none;
-      transition: background 0.3s ease, border 0.3s ease;
-    }
-
-    .links a:hover {
-      background: rgba(255,255,255,0.05);
-      border-color: var(--accent);
-    }
-
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-      }
-    }
-  </style>
 </head>
+
 <body>
 
   <nav>
-    <div class="logo">J.P.C.</div>
+    <div class="logo"><a href="index.html" class="logoIni">J.P.C.</div></a>
     <ul>
-      <li><a href="#">Acerca de</a></li>
+      <li><a href="#about">Acerca de Mí</a></li>
       <li><a href="#">Investigación</a></li>
       <li><a href="#">Proyectos</a></li>
       <li><a href="#">Escribiendo</a></li>
@@ -158,10 +38,86 @@
     </p>
 
     <div class="links">
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
+      <a target="_blank" href="https://github.com/pulachecarrenojob-pixel">GitHub</a>
+      <a target="_blank" href="#">LinkedIn</a>
     </div>
   </main>
 
+  <section class="about reveal" id="about">
+    <div class="about-grid">
+
+      <div class="about-img">
+        <img src="Imgs/500_333.jpeg" alt="Job Pulache Carreño">
+      </div>
+
+      <div class="about-text">
+        <span class="section-tag">ACERCA DE MÍ</span>
+        <h2>El software como solución real</h2>
+
+        <p class="lead">
+          Soy desarrollador de software y digitador, con experiencia apoyando
+          a distintas empresas en la creación, gestión y optimización de sistemas digitales.
+        </p>
+
+        <p>
+          Me enfoco en construir soluciones claras, funcionales y bien estructuradas,
+          combinando lógica, diseño y eficiencia. Disfruto transformar necesidades reales
+          en herramientas digitales útiles y sostenibles.
+        </p>
+      </div>
+
+    </div>
+  </section>
+ <section class="contact reveal" id="contact">
+  <canvas class="contact-bg"></canvas>
+
+  <span class="section-eyebrow">CONTACTO</span>
+
+  <h2>Iniciar un diálogo</h2>
+
+  <p class="contact-intro">
+    ¿Tienes una idea, proyecto o simplemente quieres conversar?
+    Estoy abierto a nuevas oportunidades.
+  </p>
+
+  <form class="contact-form">
+    <div class="form-row">
+      <div class="form-group">
+        <input type="text" required />
+        <label>Nombre</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" required />
+        <label>Email</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <input type="text" />
+      <label>Asunto</label>
+    </div>
+
+    <div class="form-group">
+      <textarea rows="4" required></textarea>
+      <label>Mensaje</label>
+    </div>
+
+    <button class="contact-btn magnetic">
+      <span>Enviar mensaje</span>
+    </button>
+  </form>
+
+  <div class="contact-socials">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="mailto:correo@email.com">Email</a>
+  </div>
+</section>
+
+  <script src="js/js.js"></script>
+
+
 </body>
+
 </html>
