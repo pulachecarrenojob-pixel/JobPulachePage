@@ -201,6 +201,170 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+
+    .services-editorial {
+  padding: 6rem 2rem;
+  background: radial-gradient(circle at top, #111 0%, #000 70%);
+  color: #fff;
+}
+
+.services-head {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+.services-head h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 500;
+}
+
+.services-head span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  color: #7aa89f;
+}
+
+.services-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+}
+
+.service-item {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 2rem;
+  transition: transform 0.4s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-6px);
+}
+
+.service-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.6s ease;
+}
+
+.service-item:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+.service-content {
+  margin-top: 1.5rem;
+}
+
+.service-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.service-content .tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: #7aa89f;
+  border: 1px solid rgba(122,168,159,0.4);
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.service-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #b5b5b5;
+}
+
+
+.services-header {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+.services-header h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.services-header p {
+  color: #8a8a8a;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.services-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, #0b0b0b, #000);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #b5b5b5;
+}
+
+
     /* CONTACT */
 /* CONTACT PREMIUM */
 .contact {
